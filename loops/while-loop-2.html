@@ -9,11 +9,24 @@
 </head>
 
 <body>
+    <p>executes code as long as a condition is true.</p>
+    <p>When Data is certain and Action is also certain use for loop.</p>
+    <p>When Data is certain and Action is uncertain use while loop.</p>
 
 
     <script>
+        cons =flowers = ["Flower1", "Flower2", "Flower3", "Flower4", "Flower5",];
 
-        
+        let gardenCapacity = 8;
+
+        while(gardenCapacity < 4) {
+            let flowerNumber = Math.floor(Math.random() * flowers.length);
+            console.log(`the flowerNumber variable is ${flowerNumber}`);
+            console.log(`plant flower ${flowers[flowerNumber]}`);
+            gardenCapacity += 1;
+        }
+        console.log("garden is full - you can't plant anymore flowers")
+
     </script>
 </body>
 
