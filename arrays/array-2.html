@@ -10,7 +10,10 @@
 
 <body>
     <h1>Days of the Week starting on <span></span></h1>
-    <ol></ol>
+    <ol>
+
+
+    </ol>
 
     <script>
         //create an array called daysOfTheWeek that has the  strings : Sunday, Monday .....
@@ -36,7 +39,7 @@
 
         //this is called for loop
         let list = document.querySelector('ol');
-        for (i = 0; i < daysOfTheWeek.length; i++) {
+        for (let i = 0; i < daysOfTheWeek.length; i++) {
             let liElement = document.createElement('li');
             list.appendChild(liElement).innerText = daysOfTheWeek[i];
         }
