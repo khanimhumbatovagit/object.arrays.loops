@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expand and Search Arrays</title>
+</head>
+
+<body>
+
+    <script>
+        //searching an array
+        let teams = ["Yankees", "Rangers", "Blue Jays", "Astors", "White Sox", "Rangers"];
+
+        let index = teams.indexOf("Rangers");
+        let index1 = teams.indexOf("Rangers", 5);
+        let firstIndex = teams.indexOf("Rangers");
+        let lastIndex = teams.lastIndexOf("Rangers");
+        consolq.log(firstIndex, lastIndex);
+        console.log(index);
+
+
+        if (index == -1) {
+            console.log('Item not found');
+
+        }
+        else {
+            console.log(`Item at position: ${index}`);
+        }
+
+    </script>
+
+
+
+    <!-- <script>
+        // let kids = ["Natalie", "Brittany", "Zachary"];
+        // kids[3] = "Brandon";
+        // kids[5] = "Kevin";
+        // console.log(kids);
+    </script> -->
+</body>
+
+</html>
