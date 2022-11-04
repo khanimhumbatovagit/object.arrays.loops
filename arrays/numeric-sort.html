@@ -9,7 +9,31 @@
 </head>
 
 <body>
+
+
+
     <script>
+        let numbers = [3, 27, 400, 1, 111, 5];
+        console.log(`numbers NOT sorted are ${numbers}`);
+
+        function sortNumbersAscending(a, b) {
+            return a - b;
+        }
+
+        function sortNumbersDescending(a, b) {
+            return b - a;
+        }
+
+        console.log(`ascending sort is ${numbers.sort(sortNumbersAscending)}`);
+        console.log(`descending sort is ${numbers.sort(sortNumbersDescending)}`);
+
+        numbers.sort(function () {return a - b});
+        console.log(numbers);
+
+    </script>
+
+
+    <!-- <script>
         //numeric sort helper function
 
         function compareAscendingNumber(a, b) {
@@ -25,7 +49,7 @@
         numbers.sort(compareAscendingNumber);
 
         console.log(`numbers sorted are ${numbers}`);
-    </script>
+    </script> -->
 </body>
 
 </html>
