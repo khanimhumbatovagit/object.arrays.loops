@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+   //make an array of employee name
+   let employeeNames =['Kevin', 'David', 'Natalie'];
+   console.log(employeeNames[1]);
+
+   let invoices = [{invoiceDate: 6 / 6 / 2022, invoiceNumber: 1, amountDue: 100.00, productsPurcased: ['scarf', 'sweater', 'hat']},
+   { invoiceDate: 6 / 7 / 2022, invoiceNumber: 3, amountDue: 1560.00 }];
+
+
+   //loop through an array of object
+
+   let menu = [
+{id: 1, item: "Tacos", category: "Meal", price: 12.29},
+{id: 2, item: "Burger", category: "Meal", price: 7.29},
+{id: 3, item: "Salad", category: "Meal", price: 8.29},
+{id: 4, item: "Ice tea", category: "Drink", price: 2.19},
+{id: 5, item: "Coke", category: "Drink", price: 2.29},
+
+];
+
+//step1 make a variable that represent what you are lookin for:
+let searchId = 4;
+
+//step2 make a empty Array to hold the matches
+let matching =[];
+
+//loop through the array to find our searchId 4
+//make the variable that stores the length of the array for our loop code
+let numMenuItems = menu.length;
+for (let i = 0; i < numMenuItems; i++) {
+    console.log(`this is the menu item that i am loping through ${menu[i].id}`);
+    if(menu[i].id == searchId  ) {
+        console.log('I found it');
+        matching = menu[i];
+       console.log(matching);
+        
+    }
+    
+}
+  </script>
+</body>
+
+</html>

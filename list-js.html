@@ -27,10 +27,12 @@
             let length = states.length;
             for(let i = 0; i < length; i++) {
                 //create the option element
-                let theOption = document.createElement('option');
+                // let theOption = document.createElement('option');
+                let theOption = new Option(states[i], abbreviations[i]);
                 //set the text and the value attribute of the option tag you created
-                theOption.textContent = states[i];
-                theOption.value = abbreviations[i];
+                // theOption.textContent = states[i];
+                // theOption.value = abbreviations[i];
+                
                 //append the option tag as a child of the select tag
                 statesList.appendChild(theOption);
             }
