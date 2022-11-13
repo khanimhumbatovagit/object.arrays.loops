@@ -9,6 +9,36 @@
 </head>
 
 <body>
+<button id="myBtn">Click Me</button>
+
+<script>
+
+    const myButton = document.getElementById('myBtn');
+    console.log(myButton);
+
+
+
+    myButton.onclick = () => {
+        let message = "Yo!";
+        alert(message);
+
+    }
+</script>
+
+    <!-- <script>
+        let people = [{ name: "Zachary", age: 31 },
+                      { name: "Brittany", age: 35 },
+                      { name: "Jason", age: 36 },
+                      { name: "Natalie", age: 37 },
+                      { name: "Jennifer", age: 38 }];
+
+        let somePeople = people.filter(person => person.age >= 36);
+        console.log(somePeople);
+
+
+    </script> -->
+
+
     <!-- <script>
         //arrow function with reduce method
         let numbers = [300, 150, 25];
@@ -23,7 +53,7 @@
 
     </script> -->
 
-    <script>
+    <!-- <script>
         // arrow function with the find method
         let addOnOptions = [{ item: "A/C", price: 1019.00 },
         { item: "Sunroof", price: 699.99 },
@@ -32,7 +62,9 @@
         let oneheapOption = addOnOptions.find((arrayValue) => arrayValue.price < 500);
         console.log(oneheapOption);
 
-    </script>
+    </script> -->
+
+
 </body>
 
 </html>

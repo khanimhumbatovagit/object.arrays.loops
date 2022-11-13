@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let products = [
+            { product: "Gummy Worms", price: 5.79 },
+            { product: "Plain M&Ms", price: 2.89 },
+            { product: "Peanut M&Ms", price: 2.89 },
+            { product: "Swedish Fish", price: 3.79 },
+            { product: "Skittles", price: 2.59 },
+            { product: "Twizzlers", price: 4.39 },
+            { product: "Choc Turtles", price: 5.35 },
+            { product: "Gum", price: 1.79 },
+            { product: "Sour Ribbons", price: 2.99 },
+            { product: "Sweet Tarts", price: 2.50 },
+        ];
+
+        // Which candies costs less than $4.00?
+
+        let lessThanFour = products.filter((value) => value.price < 4.00);
+        console.log(lessThanFour);
+
+        // Which candies has "M&M" its name?
+
+        let mmCandies = products.filter((arrayValue) => arrayValue.product.includes("M&M"));
+
+        console.log(mmCandies);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
